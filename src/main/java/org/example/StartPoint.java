@@ -11,10 +11,10 @@ public class StartPoint {
         Product furCoat = new Product("furCoat", 459, 4);
 
         //Формирование каталога
-        List<Product> outwears = new ArrayList<>();
-        outwears.add(jacket);
-        outwears.add(coat);
-        outwears.add(furCoat);
+        List<Product> outwears = List.of(jacket, coat, furCoat);
+//        outwears.add(jacket);
+//        outwears.add(coat);
+//        outwears.add(furCoat);
 
         Category categoryOutwears = new Category("outwears");
         categoryOutwears.setProducts(outwears);
@@ -28,18 +28,18 @@ public class StartPoint {
 
         //2 Покупка
         System.out.println("-----------------//2 Покупка-------------------");
-        User mike = new User("Mike666", "qwerty");
-        buyItem(mike, categoryOutwears, coat);
+        User user = new User("Mike7", "qwerty");
+        buyItem(user, categoryOutwears, coat);
 
         //3
         System.out.println("-----------------//3-------------------");
         printCatalog(catalog);
-        printUserBusket(mike);
+        printUserBusket(user);
     }
 
 
-    private static void buyItem(User mike, Category category, Product product) {
-        mike.addItem(product);
+    private static void buyItem(User user, Category category, Product product) {
+        user.addItem(product);
         category.removeItem(product);
     }
 

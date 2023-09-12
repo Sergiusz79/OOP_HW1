@@ -19,9 +19,9 @@ public class Category {
     }
 
     public void removeItem(Product item) {
-        for (Product produkt: products) {
-            if (produkt.getName().equals(item.getName())) {
-                products.remove(produkt);
+        for (Product product: products) {
+            if (product.getName().equals(item.getName())) {
+                products.remove(product);
             }
         }
     }
