@@ -6,7 +6,6 @@ import lombok.Getter;
 public class User {
     private final String login;
     private final String password;
-    @Getter
     private final Basket userItems;
 
     public User(String login, String password) {

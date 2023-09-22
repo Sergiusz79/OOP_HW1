@@ -1,9 +1,12 @@
 package org.example;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
 @AllArgsConstructor
 public class Basket {
 
@@ -17,8 +20,6 @@ public class Basket {
         userBasketItems.add(product);
     }
 
-    public List<Product> getUserBasketItems() {
-        return userBasketItems;
-    }
+
 }
 

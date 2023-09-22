@@ -27,10 +27,10 @@ public class Product {
         this.rating = rating;
     }
 
-    public String toString(){
+    public String toString() {
         return "Product: " + getName() +
                 " | Price: " + getPrice() + "$" +
-                " | Rating: " + getRating() +"*";
+                " | Rating: " + getRating() + "*";
     }
 
 }

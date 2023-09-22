@@ -2,6 +2,7 @@ package org.example;
 
 import lombok.Getter;
 
+import java.util.Iterator;
 import java.util.List;
 
 @Getter
@@ -19,12 +20,46 @@ public class Category {
     }
 
     public void removeItem(Product item) {
-        for (Product product: products) {
-            if (product.getName().equals(item.getName())) {
-                products.remove(product);
-            }
+//        System.out.println(item.toString());
+        System.out.println("products = " + products);
+        products.remove(0);
+        System.out.println("products = " + products);
         }
-    }
+
+//        System.out.println("products = " + products);
+//        Iterator<Product> removeIt = products.iterator();
+//        System.out.println("--------------------------------------");
+//        while(removeIt.hasNext()){
+//            Product product = removeIt.next();
+//            System.out.println("product = " + product);
+//            if (product.equals(item)){
+//                System.out.println("remove");
+//                removeIt.remove();
+//                System.out.println("-----------------------");
+//
+//            }
+//            System.out.println("products = " + products);
+//        }
+
+
+
+//
+////        products.removeIf(x -> x.getName().equals(item.getName()));
+//
+////        System.out.println("remove");
+//        int index = 0;
+//        for (Product product : products) {
+//            if (product.getName().equals(item.getName())) {
+//                System.out.println("product equals item");
+//                index = products.indexOf(product);
+//            }
+//        }
+//        System.out.println("products = " + products);
+//        System.out.println("index = " + index);;
+////        products.remove(index);
+//        System.out.println("remove");
+//        System.out.println("products = " + products);
+//    }
 
 
 
