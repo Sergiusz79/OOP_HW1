@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class StartPoint {
@@ -20,6 +21,20 @@ public class StartPoint {
         List<Product> outwears = List.of(jacket, coat, furCoat);
         List<Product> shoes = List.of(boots, sneakers, sandals);
         List<Product> accessories = List.of(necklace, watch, gloves);
+
+//        List<Product> outwears = Arrays.asList(
+//                new Product("jacket", 159, 4),
+//                new Product("coat", 200, 3),
+//                new Product("furCoat", 459, 4));
+//        List<Product> shoes = Arrays.asList(
+//                new Product("boots", 160, 4),
+//                new Product("sneakers", 59, 3),
+//                new Product("sandals", 69, 5));
+//        List<Product> accessories = Arrays.asList(
+//                new Product("necklace", 359, 5),
+//                new Product("watch", 259, 4),
+//                new Product("gloves", 119, 5));
+
         Category categoryOutwears = new Category("outwears");
         categoryOutwears.setProducts(outwears);
         Category categoryShoes = new Category("shoes");
