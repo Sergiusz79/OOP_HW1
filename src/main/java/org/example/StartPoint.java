@@ -18,9 +18,22 @@ public class StartPoint {
         Product gloves = new Product("gloves", 119, 5);
 
         //Формирование каталога
-        List<Product> outwears = List.of(jacket, coat, furCoat);
-        List<Product> shoes = List.of(boots, sneakers, sandals);
-        List<Product> accessories = List.of(necklace, watch, gloves);
+//        List<Product> outwears = List.of(jacket, coat, furCoat);
+//        List<Product> shoes = List.of(boots, sneakers, sandals);
+//        List<Product> accessories = List.of(necklace, watch, gloves);
+
+        List<Product> outwears = new ArrayList<>();
+        outwears.add(jacket);
+        outwears.add(coat);
+        outwears.add(furCoat);
+        List<Product> shoes = new ArrayList<>();
+        shoes.add(boots);
+        shoes.add(sneakers);
+        shoes.add(sandals);
+        List<Product> accessories = new ArrayList<>();
+        accessories.add(necklace);
+        accessories.add(watch);
+        accessories.add(gloves);
 
 //        List<Product> outwears = Arrays.asList(
 //                new Product("jacket", 159, 4),
