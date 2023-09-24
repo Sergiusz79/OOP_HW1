@@ -16,7 +16,7 @@ public class StartPoint {
         Product watch = new Product("watch", 259, 4);
         Product gloves = new Product("gloves", 119, 5);
 
-        //Формирование каталога
+
         List<Product> outwears = new ArrayList<>();
         outwears.add(jacket);
         outwears.add(coat);
@@ -48,11 +48,12 @@ public class StartPoint {
         //2 Покупка
         User user = new User("Mike7", "qwerty");
         System.out.println("user = " + user.getLogin());
-        buyItem(user, categoryOutwears, coat);
+        buyItem(user, categoryShoes, sneakers);
+        buyItem(user,categoryAccessories, watch);
 
-        //3
+        //3 Итог
         printCatalog(catalog);
-        printUserBusket(user);
+        printUserBasket(user);
     }
 
 
@@ -67,16 +68,19 @@ public class StartPoint {
             System.out.println("Category: " + category.getName());
             for (Product product: category.getProducts()) {
                 System.out.println(product.toString());
+
             }
         }
+        System.out.println(" ");
     }
 
-    private static void printUserBusket(User user) {
-        System.out.println("Print " + user.getLogin() + "'s basket");
+    private static void printUserBasket(User user) {
+        System.out.println("Products in " + user.getLogin() + "'s basket:");
         List<Product> userItems = user.getUserItems().getUserBasketItems();
         for (Product item: userItems) {
             System.out.println(item.toString());
         }
+        System.out.println(" ");
     }
 
 

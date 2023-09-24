@@ -16,6 +16,7 @@ public class User {
 
     public void addItem(Product product) {
         userItems.addToBasket(product);
+
     }
 
 }

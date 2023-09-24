@@ -18,6 +18,7 @@ public class Basket {
 
     public void addToBasket(Product product) {
         userBasketItems.add(product);
+        System.out.println(product + " added to basket.");
     }
 
 
