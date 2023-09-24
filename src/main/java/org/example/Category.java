@@ -20,14 +20,15 @@ public class Category {
     }
 
     public void removeItem(Product item) {
-        for (Product product : products) {
-            if (product.getName().equals(item.getName())) {
-                products.remove(product);
-                System.out.println(product + " removed from the catalog.");
+                boolean result = products.remove(item);
+                if (result) {
+                    System.out.println(item + " removed from the catalog.");
+                }
                 System.out.println(" ");
-            }
         }
 
 
-    }
+
+
+
 }

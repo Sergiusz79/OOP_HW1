@@ -46,19 +46,24 @@ public class StartPoint {
         printCatalog(catalog);
 
         //2 Покупка
-        User user = new User("Mike7", "qwerty");
-        User user2 = new User("Mike77", "qwerty1");
-        System.out.println("user = " + user.getLogin());
-        buyItem(user, categoryShoes, sneakers);
-        buyItem(user,categoryAccessories, watch);
+        User user1 = new User("Mike", "qwerty");
+        User user2 = new User("Din", "qwerty1");
+        User user3 = new User("Sam", "qwerty2");
+        System.out.println("user = " + user1.getLogin());
+        buyItem(user1, categoryShoes, sneakers);
+        buyItem(user1, categoryAccessories, watch);
         System.out.println("user = " + user2.getLogin());
         buyItem(user2, categoryShoes, boots);
-        buyItem(user2,categoryAccessories, gloves);
+        buyItem(user2,categoryOutwears, jacket);
+        System.out.println("user = " + user3.getLogin());
+        buyItem(user3, categoryOutwears, coat);
+        buyItem(user3, categoryAccessories, gloves);
 
         //3 Итог
         printCatalog(catalog);
-        printUserBasket(user);
+        printUserBasket(user1);
         printUserBasket(user2);
+        printUserBasket(user3);
     }
 
 

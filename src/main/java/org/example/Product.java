@@ -1,9 +1,12 @@
 package org.example;
 
+
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
 
 @Getter
+@EqualsAndHashCode
 public class Product {
     private String name;
     private int price;
