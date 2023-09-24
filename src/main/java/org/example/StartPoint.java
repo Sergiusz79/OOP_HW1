@@ -47,13 +47,18 @@ public class StartPoint {
 
         //2 Покупка
         User user = new User("Mike7", "qwerty");
+        User user2 = new User("Mike77", "qwerty1");
         System.out.println("user = " + user.getLogin());
         buyItem(user, categoryShoes, sneakers);
         buyItem(user,categoryAccessories, watch);
+        System.out.println("user = " + user2.getLogin());
+        buyItem(user2, categoryShoes, boots);
+        buyItem(user2,categoryAccessories, gloves);
 
         //3 Итог
         printCatalog(catalog);
         printUserBasket(user);
+        printUserBasket(user2);
     }
 
 
